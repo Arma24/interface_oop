@@ -1,11 +1,11 @@
 <?php 
 
-	class orang{
+	class Orang{
 		var $nama;
 		var $umur;
 		var $sekolah;
 
-		function tampilkan_nama(){
+		function tampilkanNama(){
 			return "Nama : Armaningtyas Utami";
 		}
 		function umur(){
@@ -16,9 +16,9 @@
 		}
 	}
 
-	$orang = new orang();
+	$orang = new Orang();
 
-	echo $orang->tampilkan_nama();
+	echo $orang->tampilkanNama();
 	echo "<br>";
 	echo $orang->umur();
 	echo "<br>";

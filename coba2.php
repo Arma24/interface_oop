@@ -1,28 +1,28 @@
 <?php 
 
-	interface iniRumus{
-		public function luas_persegi();
-		public function luas_segitiga();
-		public function luas_lingkaran();
+	interface IniRumus{
+		public function luasPersegi();
+		public function luasSegitiga();
+		public function luasLingkaran();
 	}
 
-	class rumus implements iniRumus{
-		public function luas_persegi(){
+	class Rumus implements IniRumus{
+		public function luasPersegi(){
 			return "Ini adalah luas persegi";
 		}
 
-		public function luas_segitiga(){
+		public function luasSegitiga(){
 			return "Ini adalah luas segitiga";
 		}
 
-		public function luas_lingkaran(){
+		public function luasLingkaran(){
 			return "Ini adalah luas lingkaran";
 		}
 	}
 
 	$rumus = new Rumus;
-	echo $rumus->luas_persegi()."<br>";
-	echo $rumus->luas_segitiga()."<br>";
-	echo $rumus->luas_lingkaran()."<br>";
+	echo $rumus->luasPersegi()."<br>";
+	echo $rumus->luasSegitiga()."<br>";
+	echo $rumus->luasLingkaran()."<br>";
 
 ?>

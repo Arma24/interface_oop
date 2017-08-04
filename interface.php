@@ -1,11 +1,11 @@
 <?php 
 
-	interface motor{
+	interface Motor{
 		public function gas();
 		public function rem();
 	}
 
-	class mobil implements motor{
+	class Mobil implements Motor{
 		public function gas(){
 			return "Sekarang waktunya gas";
 		}
@@ -14,7 +14,7 @@
 		}
 	}
 
-	$mobil_baru = new mobil();
-	echo $mobil_baru->rem();
+	$mobilBaru = new Mobil();
+	echo $mobilBaru->rem();
 
 ?>

@@ -1,18 +1,18 @@
 <?php 
 
-	interface motor{
+	interface Motor{
 		public function gas();
 		public function rem(){
 			return "Sekarang waktunya rem";
 		}
 	}
 
-	class mobil extends motor{
+	class Mobil extends Motor{
 		public function gas(){
 			return "Sekarang waktunya gas";
 		}
 	}
 
-	$mobil_baru = new mobil();
+	$mobilBaru = new Mobil();
 
 ?>

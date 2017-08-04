@@ -1,27 +1,27 @@
 <?php 
 
-	interface motor{
+	interface Motor{
 		public function gas();
 		public function rem();
 	}
 
-	interface mobil{
-		public function ubah_kecepatan();
+	interface Mobil{
+		public function ubahKecepatan();
 	}
 
-	class bus implements motor, mobil{
+	class Bus implements Motor, Mobil{
 		public function gas(){
 			return "Sekarang waktunya gas";
 		}
 		public function rem(){
 			return "Sekarang waktunya rem";
 		}
-		public function ubah_kecepatan(){
+		public function ubahKecepatan(){
 			return "Ubahlah kecepatanmu sekarang";
 		}
 	}
 
-	$bus_baru = new bus();
-	echo $bus_baru->ubah_kecepatan();
+	$busBaru = new Bus();
+	echo $busBaru->ubahKecepatan();
 
 ?>
