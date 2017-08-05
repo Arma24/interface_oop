@@ -1,12 +1,12 @@
 <?php 
 
-	interface Laptop{
-		public function klik();
+    interface Laptop{
+	    public function klik();
 	}
 
-	class Laptop implements Laptop{
-		public function klik(){
-			return "Klik pada laptop";
+    class Laptop implements Laptop{
+	    public function klik(){
+		    return "Klik pada laptop";
 		}
 	}
 
