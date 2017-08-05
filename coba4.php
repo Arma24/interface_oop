@@ -1,10 +1,10 @@
 <?php 
 
-    interface Rumus{
-	    const phi=3.14;
-	    public function luasLingkaran();
-	}
+interface Rumus{
+    const phi=3.14;
+    public function luasLingkaran();
+}
 
-    echo Rumus::phi."<br>";
+echo Rumus::phi."<br>";
 
 ?>
